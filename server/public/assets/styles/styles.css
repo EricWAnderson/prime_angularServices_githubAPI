@@ -1,0 +1,16 @@
+li {
+    list-style-type: none;
+}
+
+ul {
+    width: 400px;
+    display: inline-block;
+}
+
+h1 {
+    -webkit-padding-start: 40px;
+}
+
+img {
+    height: 100px;
+}
