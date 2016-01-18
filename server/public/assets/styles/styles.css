@@ -1,14 +1,11 @@
-li {
-    list-style-type: none;
+h1 {
+    margin: 5px;
 }
 
-ul {
+.panel {
     width: 400px;
     display: inline-block;
-}
-
-h1 {
-    -webkit-padding-start: 40px;
+    margin: 5px;
 }
 
 img {

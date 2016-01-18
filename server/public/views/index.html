@@ -13,20 +13,16 @@
 <body ng-controller="myController">
     <div class="container">
         <h1>Eric Anderson's GitHub events</h1>
-            <ul ng-repeat="object in github.results">
-                <li>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="{{object.actor.avatar_url}}" />
-                            <span class="badge">{{object.repo.name}}</span>
-                        </div>
-                        <div class="panel-footer">
-                            <p>{{object.type}}: {{object.id}}</p>
-                            <p>URL: <a href="http://www.github.com/{{object.repo.name}}">{{object.repo.name}}</a></p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <div class="panel panel-default" ng-repeat="object in github.results">
+            <div class="panel-body">
+                <img src="{{object.actor.avatar_url}}" />
+                <span class="badge">{{object.repo.name}}</span>
+            </div>
+            <div class="panel-footer">
+                <p>{{object.type}}: {{object.id}}</p>
+                <p>URL: <a href="http://www.github.com/{{object.repo.name}}">{{object.repo.name}}</a></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
